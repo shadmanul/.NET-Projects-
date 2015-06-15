@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="FinalProject.UI.Pages.WriteMessage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d">
+    <ScrollViewer>
+        <Grid Style="{StaticResource ContentRoot}">
+            <TextBlock FontFamily="Franklin Gothic Heavy" Text="TO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,14,0,0" Width="72"/>
+            <TextBlock FontFamily="Franklin Gothic Heavy" Text="Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" Width="72"/>
+            <TextBox Name="ToTB" FontFamily="Franklin Gothic Heavy" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="110,14,10,0"/>
+            <TextBox Name="SubjectTB" FontFamily="Franklin Gothic Heavy" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="110,52,10,0"/>
+            <TextBox Name="BodyTB" FontFamily="Franklin Gothic Heavy" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,109,10,94" AcceptsReturn="True" />
+            <Button Name="SendButton" BorderBrush="#FF1BA1E2" BorderThickness="2" Content="Send" FontFamily="Franklin Gothic Heavy" Click="SendButton_Click" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="42" Margin="10,0,10,26"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

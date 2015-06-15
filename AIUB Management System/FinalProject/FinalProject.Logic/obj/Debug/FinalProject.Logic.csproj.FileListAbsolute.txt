@@ -1,0 +1,21 @@
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Logic.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Logic.pdb
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Data.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Data.pdb
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.csprojResolveAssemblyReference.cache
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Logic\obj\Debug\FinalProject.Logic.pdb

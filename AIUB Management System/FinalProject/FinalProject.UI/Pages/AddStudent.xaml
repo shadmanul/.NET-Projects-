@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="FinalProject.UI.Pages.AddStudent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="568.966" d:DesignWidth="493.448">
+    <ScrollViewer>
+        <Grid Style="{StaticResource ContentRoot}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="461*"/>
+                <RowDefinition Height="64*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="242*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.Row="0" >
+                <TextBlock x:Name="tb1" Text="Student ID" Height="22" Margin="10,0,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb2" Text="Account Password" Height="22" Margin="10,3,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb0" Text="Status" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb3" Text="First Name" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb4" Text="Last Name" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb5" Text="Department" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb6" Text="Semester" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb7" Text="Credit Completed" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb8" Text="Date of Birth" Height="22" Margin="10,5,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb9" Text="Blood Group" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb10" Text="Father's Name" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb11" Text="Father Number" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb12" Text="Mother's Name" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb13" Text="Mother Number" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb14" Text="Guardian's Name" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb15" Text="Guardian Number" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb16" Text="Address" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb17" Text="Mobile" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb18" Text="Email" Height="22" Margin="10,4,0,0" FontFamily="Franklin Gothic Heavy"/>
+
+
+            </StackPanel>
+
+
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <TextBox Name="studentIDTB" Text="" Margin="0,0,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="passwordTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="statusTB" Text="Student, Faculty or Admin" Margin="0,3,10,0" PreviewMouseDown="statusTB_PreviewMouseDown" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="firstNameTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="lastNameTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="departmentTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="semesterTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="creditCompletedTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="dateOfBirthTB" Margin="0,3,10,0" Text="Date-Month-Years" PreviewMouseDown="statusTB_PreviewMouseDown" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="bloodGroupTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="fathersNameTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" Height="19" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="fatherNumberTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="mothersNameTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="motherNumberTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="guardianNameTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="guardianNumberTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="addressTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="mobileTB" Text="" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+                <TextBox Name="emailTB" Text="Can be NULL" PreviewMouseDown="statusTB_PreviewMouseDown" Margin="0,3,10,0" FontFamily="Franklin Gothic Heavy"/>
+            </StackPanel>
+            <Button Name="AddButton" BorderBrush="#FF1BA1E2" BorderThickness="2" Grid.Row="1" Grid.ColumnSpan="2" Content="ADD STUDENT" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="10,5,10,0" Height="26" Click="AddButton_Click"/>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

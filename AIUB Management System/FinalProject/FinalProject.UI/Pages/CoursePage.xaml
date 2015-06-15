@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="FinalProject.UI.Pages.CoursePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="471.724" d:DesignWidth="457.241" >
+    <Grid Style="{StaticResource ContentRoot}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="98*"/>
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="CourseList" Grid.Row="1" BorderBrush="#FFCB3A3A" FontFamily="Franklin Gothic Heavy" >
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Height" Value="80" />
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" />
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <ComboBox Name="semesterCB" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Margin="0,3,5,0" Height="22" SelectionChanged="semesterCB_SelectionChanged" >
+            <ComboBoxItem Name="sp1314">Spring 13-14</ComboBoxItem>
+            <ComboBoxItem Name="fl1314">Fall 13-14</ComboBoxItem>
+
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Right" Style="{StaticResource Heading2}" TextWrapping="Wrap" Text="Semester" VerticalAlignment="Top" Margin="0,4,130,0" Height="21" Width="70"/>
+        
+
+
+
+    </Grid>
+</UserControl>

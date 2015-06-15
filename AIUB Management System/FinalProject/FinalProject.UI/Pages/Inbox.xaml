@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="FinalProject.UI.Pages.Inbox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Loaded="UserControl_Loaded">
+    <ScrollViewer>
+        <Grid Style="{StaticResource ContentRoot}">
+            <!--<Grid.ColumnDefinitions>
+                <ColumnDefinition Width="39*"/>
+                <ColumnDefinition Width="95*"/>
+            </Grid.ColumnDefinitions>-->
+            <ListBox x:Name="SubjectList" MouseDoubleClick="SubjectList_MouseDoubleClick" Margin="10" VerticalContentAlignment="Center" BorderThickness="0" BorderBrush="#FFCB3A3A" FontFamily="Franklin Gothic Heavy" Foreground="Black">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Height" Value="50" />
+                        <Setter Property="Margin" Value="0,15,0,0" />
+                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" />
+                        
+                    </Style>
+
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+            <!--<ListBox Grid.Column="1" x:Name="MessageList" Margin="10" BorderThickness="0" MouseDoubleClick="MessageList_MouseDoubleClick">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Height" Value="50" />
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>-->
+
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="FinalProject.UI.Pages.ProfilePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" d:DesignWidth="476.069" Loaded="Page_Loaded">
+    <ScrollViewer>
+    <Grid Style="{StaticResource ContentRoot}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="242*"/>
+        </Grid.ColumnDefinitions>
+        
+            <StackPanel Name="stack1" MinWidth="200" Grid.Column="0">
+                <TextBlock Text="PROFILE" Style="{StaticResource Heading2}" Height="40"/>
+                <TextBlock x:Name="tb1" Text="Student ID" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb2" Text="Name" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb3" Text="Department" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb0" Text="CGPA" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb4" Text="Semester" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb5" Text="Credit Completed" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb6" Text="Date of Birth" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb7" Text="Blood Group" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb8" Text="Father's Name" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb9" Text="Father Number" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb10" Text="Mother's Name" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb11" Text="Mother Number" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb12" Text="Guardian's Name" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb13" Text="Guardian Number" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb14" Text="Address" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb15" Text="Mobile" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock x:Name="tb16" Text="Email" Height="25" FontFamily="Franklin Gothic Heavy"/>
+                
+            </StackPanel>
+
+
+            <StackPanel Name="stack2" Grid.Column="1">
+                <TextBlock Text="DETAILS" Style="{StaticResource Heading2}" Height="40"/>
+                <TextBlock Name="studentIDTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="nameTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="departmentTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="CGPATB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="semesterTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="creditCompletedTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="dateOfBirthTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="bloodGroupTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="fathersNameTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="fatherNumberTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="mothersNameTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="motherNumberTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="guardianNameTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="guardianNumberTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="addressTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="mobileTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+                <TextBlock Name="emailTB" Height="25" Text="" FontFamily="Franklin Gothic Heavy"/>
+            </StackPanel>
+        
+
+    </Grid>
+    </ScrollViewer>
+</UserControl>

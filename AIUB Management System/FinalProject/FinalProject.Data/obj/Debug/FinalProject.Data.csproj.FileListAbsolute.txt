@@ -1,0 +1,18 @@
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.dll.config
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.pdb
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.dll.config
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.dll.config
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Data\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.Data\obj\Debug\FinalProject.Data.pdb

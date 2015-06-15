@@ -1,0 +1,5 @@
+c:\users\_shadman_\documents\visual studio 2010\Projects\MidProject\MidProject\bin\MidProject.dll
+c:\users\_shadman_\documents\visual studio 2010\Projects\MidProject\MidProject\bin\MidProject.pdb
+c:\users\_shadman_\documents\visual studio 2010\Projects\MidProject\MidProject\obj\Debug\MidProject.dll
+c:\users\_shadman_\documents\visual studio 2010\Projects\MidProject\MidProject\obj\Debug\MidProject.pdb
+C:\Users\_ShadmaN_\documents\visual studio 2010\Projects\MidProject\MidProject\obj\Debug\MidProject.csprojResolveAssemblyReference.cache

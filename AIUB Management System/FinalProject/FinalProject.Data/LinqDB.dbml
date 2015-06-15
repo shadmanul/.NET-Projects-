@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AIUBVues" Class="DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=AIUBVues;Integrated Security=True" SettingsObjectName="FinalProject.Data.Properties.Settings" SettingsPropertyName="AIUBVuesConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Courses" Member="Courses">
+    <Type Name="Course">
+      <Column Name="CourseID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CourseName" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Cedit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Course_Grade" Member="Grades" ThisKey="CourseID" OtherKey="CourseID" Type="Grade" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grades" Member="Grades">
+    <Type Name="Grade">
+      <Column Name="No" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Semester" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grade" Member="Grade1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Course_Grade" Member="Course" ThisKey="CourseID" OtherKey="CourseID" Type="Course" IsForeignKey="true" />
+      <Association Name="Faculty_Grade" Member="Faculty" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="Faculty" IsForeignKey="true" />
+      <Association Name="StudentInfo_Grade" Member="StudentInfo" ThisKey="StudentID" OtherKey="ID" Type="StudentInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Faculties" Member="Faculties">
+    <Type Name="Faculty">
+      <Column Name="EmployeeID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Salary" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Faculty_Grade" Member="Grades" ThisKey="EmployeeID" OtherKey="EmployeeID" Type="Grade" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentInfo" Member="StudentInfos">
+    <Type Name="StudentInfo">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Department" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CGPA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CreditCompleted" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Semester" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="BloodGroup" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FatherName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MotherName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GuardianName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FatherNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MotherNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GuardianNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobile" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="StudentInfo_Grade" Member="Grades" ThisKey="ID" OtherKey="StudentID" Type="Grade" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ToDosTable" Member="ToDosTables">
+    <Type Name="ToDosTable">
+      <Column Name="No" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ToDo" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="LoginInfo_ToDosTable" Member="LoginInfo" ThisKey="ID" OtherKey="ID" Type="LoginInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Messaging" Member="Messagings">
+    <Type Name="Messaging">
+      <Column Name="No" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[From]" Member="From" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Time" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="LoginInfo_Messaging" Member="LoginInfo" ThisKey="From" OtherKey="ID" Type="LoginInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoginInfo" Member="LoginInfos">
+    <Type Name="LoginInfo">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LoginInfo_ToDosTable" Member="ToDosTables" ThisKey="ID" OtherKey="ID" Type="ToDosTable" />
+      <Association Name="LoginInfo_Messaging" Member="Messagings" ThisKey="ID" OtherKey="From" Type="Messaging" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,260 @@
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.pdb
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.csprojResolveAssemblyReference.cache
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\MainWindow.baml
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Content\About.baml
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.baml
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.baml
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.baml
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\App.baml
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\MainWindow.g.cs
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Content\About.g.cs
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.g.cs
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.g.cs
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.g.cs
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\App.g.cs
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_MarkupCompile.cache
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.g.resources
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.exe
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.pdb
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe.config
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.dll
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.pdb
+c:\users\_shadman_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.baml
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.g.cs
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.baml
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.baml
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.g.cs
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.baml
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.baml
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.baml
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.g.cs
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.g.cs
+C:\Users\_ShadmaN_\documents\visual studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe.config
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\MainWindow.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Content\About.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\App.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\MainWindow.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Content\About.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\App.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_MarkupCompile.cache
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.g.resources
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.baml
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.g.cs
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.baml
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.g.cs
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.baml
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.baml
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.g.cs
+C:\Users\_ShadmaN_\Desktop\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.g.cs
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.baml
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.g.cs
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.baml
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.g.cs
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.baml
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.g.cs
+C:\Users\_ShadmaN_\Documents\Visual Studio 2013\Projects\FinalProject\FinalProject.UI\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe.config
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\MainWindow.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\About.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\App.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\MainWindow.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\About.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\App.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_MarkupCompile.cache
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.g.resources
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_Content.g.cs
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ChatPage.baml
+C:\Users\_ShadmaN_\Desktop\TestProject\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ChatPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe.config
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\MainWindow.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\About.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ChatPage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\App.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\MainWindow.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\About.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ChatPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\Settings.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\App.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_Content.g.cs
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_MarkupCompile.cache
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.g.resources
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\SentMessages.baml
+C:\Users\_ShadmaN_\Desktop\Not Clean FinalProject With SignalR\ProjectBackUp\FinalProject\FinalProject.UI\obj\Debug\Pages\SentMessages.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe.config
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.exe
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.UI.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Data.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\FinalProject.Logic.pdb
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.csprojResolveAssemblyReference.cache
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\MainWindow.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Content\About.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\ChatPage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\SentMessages.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\App.baml
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\MainWindow.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Content\About.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Content\SettingsAppearance.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\AddFaculty.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\AddStudent.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\AddUserPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\ChatPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\CoursePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\GradePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\Home.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\Inbox.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\MailPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\MessagePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\SentMessages.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\TabPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\ToDoPage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\Pages\WriteMessage.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\App.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_Content.g.cs
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI_MarkupCompile.cache
+C:\Users\_ShadmaN_\Desktop\Complete FinalProject With SignalR\FinalProject\FinalProject.UI\obj\Debug\FinalProject.UI.g.resources
