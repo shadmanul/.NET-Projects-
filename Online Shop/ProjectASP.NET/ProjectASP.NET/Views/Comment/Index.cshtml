@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ProjectASP.NET.Comment>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/bootstraps.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/FrameStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/css/mainmap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+   
+    
+    @foreach (var item in Model)
+    {
+        
+            <table class="table">
+                <tr>
+                    <td class="success">
+                        <img src="@Url.Action("GetImage", "Image", new { id = item.Username })" class="img-thumbnail" alt="Responsive image" width="50" height="50" />
+                    </td>
+                    <td rowspan="1">
+                        @Html.Raw(item.CommentMessage.Replace(Environment.NewLine, "<br/>"))
+                    </td>
+                </tr>
+                <tr>
+                    <td class="success" width="80">
+                        <a href="@Url.Action("Index", "Profile", new { id = item.Username })" target="_blank">@item.Username</a>
+                    </td>
+                    <td class="success">
+                        @Html.DisplayFor(modelItem => item.Time)
+                    </td>
+                    @if (Convert.ToString(Session["status"]).Equals("Admin") || Convert.ToString(Session["username"]).Equals(item.Username))
+                    {
+                        <td class="success" width="80">
+                            <a href="@Url.Action("DeleteComment", "Comment", new {id=item.CommentID })" class="btn btn-info">Delete</a>
+                        </td>
+                    }
+                </tr>
+            </table>   
+    }
+    
+</body>
+</html>

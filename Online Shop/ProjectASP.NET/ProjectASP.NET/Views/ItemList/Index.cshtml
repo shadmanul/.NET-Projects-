@@ -1,0 +1,147 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<ProjectASP.NET.Item>
+
+
+@{
+    ViewBag.Title = "Items";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Active4 = "active";
+    ViewBag.footer = "active";
+    if (Session["username"] != null){
+        ViewBag.col = "col-md-8";
+    }
+    else{
+        ViewBag.col = "col-md-12";
+    }
+        
+}
+
+<section id="about-us">
+<div class="container">
+    @*<div class="center wow fadeInDown">*@
+        <div class="row">
+        <div class="col-md-4">
+        @if (Session["username"] != null)
+        {
+            <div class="table-responsive">
+            @using (Html.BeginForm("Index", "ItemList", FormMethod.Get))
+            {
+            <table class="table">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Title" name="title" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="location" name="location" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="font-weight:bold">Category:</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="form-control" name="category">
+                            <option value="">(None)</option>
+                            <option value="Mobiles">Mobiles</option>
+                            <option value="Desktops">Desktops</option>
+                            <option value="Cars">Cars</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Laptops">Laptops</option>
+                            <option value="Consoles">Consoles</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Furnitures">Furnitures</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="font-weight:bold">Price Less Than:</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="form-control" name="price">
+                            <option value="">(None)</option>
+                            <option value="5000">5000</option>
+                            <option value="10000">10000</option>
+                            <option value="15000">15000</option>
+                            <option value="20000">20000</option>
+                            <option value="30000">30000</option>
+                            <option value="50000">50000</option>
+                            <option value="100000">100000</option>
+                            <option value="200000">200000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" value="Search" class="btn-success form-control" />
+                    </td>
+                </tr>
+            </table>
+            }
+            </div>
+        }
+        
+        </div>
+            <div class=@ViewBag.col>
+                    <div class="list-group">
+                    @foreach (var item in Model)
+                    {
+                                <a href="@Url.Action("Index", "ItemProfile", new { id = item.ItemID })" class="list-group-item">
+                                
+                                    <table class="table">
+                                    <tr>
+                                    <th rowspan="4" align="left" width="160">
+                                    <img src="@Url.Action("GetItemImage", "Image", new { id = item.ItemID }, null)" id="productimage" height="120" width="120" class="img-thumbnail" alt="Image" />
+                                    </th>
+                                    <th align="left" colspan="2">
+                                    <span style="color:Red">
+                                    @Html.DisplayFor(modelItem => item.ItemTitle)
+                                    </span>
+                                    </th>
+                                    </tr>
+
+                                    <tr>
+                                    <th align="left">Seller: <span style="color:Teal">
+                                    @Html.DisplayFor(modelItem => item.SellerUsername)
+                                    </span>
+                                    </th>
+                                    <th align="left">
+                                    Category: @Html.DisplayFor(modelItem => item.Category)
+                                    </th>
+                                    </tr>
+
+                                    <tr>
+                                    
+                                    <th align="left">
+                                    Price: $@Html.DisplayFor(modelItem => item.Price)
+                                    </th>
+                                    <th align="left">
+                                    Date: @Html.DisplayFor(modelItem => item.Posted)
+                                    </th>
+                                    </tr>
+                                    
+                                    </table>
+                                    
+                                </a>
+                            
+                    }
+                    </div>
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, title = Request.QueryString["title"], location = Request.QueryString["location"], category = Request.QueryString["category"], price = Request.QueryString["price"] }),
+                    new PagedListRenderOptions()
+                    {
+                        Display = PagedListDisplayMode.IfNeeded
+                    })
+            </div>
+        </div>
+    @*</div>*@
+</div>
+</section>
+
+

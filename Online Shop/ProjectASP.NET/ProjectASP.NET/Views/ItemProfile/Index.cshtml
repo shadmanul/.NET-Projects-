@@ -1,0 +1,136 @@
+﻿@model ProjectASP.NET.Item
+
+@{
+    ViewBag.Title = Model.ItemTitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.footer = "active";
+}
+
+<section id="about-us">
+<div class="container">
+    @*<div class="center wow fadeInDown">*@
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="table-responsive">
+                    <table align="center" class="table">
+                        <tr class="success">
+                            <td >
+                                <h3 style="font-weight:bold;">Title: </h3>
+                            </td>
+                            <td>
+                                <h3 style="font-weight:bold;">@Html.DisplayFor(model => model.ItemTitle)</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Seller: </div>
+                            </td>
+                            <td>
+                                <a href="@Url.Action("Index", "Profile", new { id = Model.SellerUsername })">@Html.DisplayFor(model => model.SellerUsername)</a>
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Category: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Category)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Price: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Price)
+                            </td>
+                        </tr>
+                        <tr class="success ">
+                            <td>
+                                <div>Item Description: </div>
+                            </td>
+                            <td>
+                                @Html.Raw(Model.ItemDescription.Replace(Environment.NewLine, "<br/>"))
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Date Posted: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Posted)
+                            </td>
+                        </tr>
+                        <tr class="success ">
+                            <td>
+                                <div>Location: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Location)
+                            </td>
+                        </tr>
+                        @if (Model.SellerUsername.Equals(Convert.ToString(Session["username"])) || Convert.ToString(Session["status"]).Equals("Admin"))
+                        {
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("Index", "EditAd", new { id=Model.ItemID })" class="btn btn-info btn-block">Delete</a>
+                            </td>
+                            <td>
+                                <a href="@Url.Action("EditAdvertise", "EditAd", new { id = Model.ItemID })" class="btn btn-info btn-block">Edit</a>
+                            </td>
+                        </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="@Url.Action("ItemImage", "ItemProfile", new { id = Model.ItemID })" height="800px" width="100%">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+			<div class="row team-bar">
+				<div class="first-one-arrow hidden-xs">
+					<hr>
+				</div>
+				<div class="first-arrow hidden-xs">
+					<hr> <i class="fa fa-angle-up"></i>
+				</div>
+				<div class="second-arrow hidden-xs">
+					<hr> <i class="fa fa-angle-down"></i>
+				</div>
+				<div class="third-arrow hidden-xs">
+					<hr> <i class="fa fa-angle-up"></i>
+				</div>
+				<div class="fourth-arrow hidden-xs">
+					<hr> <i class="fa fa-angle-down"></i>
+				</div>
+			</div>
+        </div>
+        <div class="row">
+
+            @if (Session["username"] != null)
+            {
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="@Url.Action("Index", "Comment", new { id = Model.ItemID })" height="100%" width="100%">
+                        </iframe>
+                    </div>
+                </div>
+                using (Html.BeginForm())
+                {
+                    <div class="col-md-6">
+                        <input type="hidden" name="itemid" value="@Model.ItemID" />
+                        <textarea class="form-control" rows="5" name="comment" placeholder="Place your comment.." required></textarea><br />
+                        <input type="submit" value="Comment" class="form-control btn-success"/>
+                    </div>
+                }
+            }
+        </div>
+                
+    @*</div>*@
+</div>
+</section>

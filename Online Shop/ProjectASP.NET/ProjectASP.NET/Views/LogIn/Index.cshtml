@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Sign In";
+    ViewBag.footer = "active";
+}
+
+<br />       
+<div id="login-overlay" class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">      
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+        </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-6">
+                    <div class="well">
+                    @using (Html.BeginForm())
+                    {           
+                    
+                        <label for="username" class="control-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="UsernameTB" value="" required="" title="Please enter you username" placeholder="Username" />
+                        <span class="help-block"></span>
+                    
+                    
+                        <label for="password" class="control-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="PasswordTB" value="" required="" title="Please enter your password" />
+                        <span class="help-block"></span>
+                    
+                    <div style="color:Green ; font-weight:bold" >@ViewBag.msg</div><br />
+                              
+                    <button type="submit" class="btn btn-success btn-block">Login</button>
+                              
+                    }
+                    </div>
+                    </div>
+                    <div class="col-xs-6">
+                    <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                    <ul class="list-unstyled" style="line-height: 2">
+                        <li><span class="fa fa-check text-success"></span> Can Post Ads</li>
+                        <li><span class="fa fa-check text-success"></span> Advance Search Option</li>
+                        <li><span class="fa fa-check text-success"></span> Edit/Delete Posted Ads</li>
+                        <li><span class="fa fa-check text-success"></span> Promotion to Admin</li>
+                        <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
+                    </ul>
+                    <p><a href="@Url.Action("Index", "Registration")" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+      
+

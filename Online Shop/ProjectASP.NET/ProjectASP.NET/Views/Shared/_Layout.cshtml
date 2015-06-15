@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewBag.Title</title>
+	
+	<!-- core CSS -->
+    <link href="~/Content/css/bootstraps.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/FrameStyle.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/css/mainmap.css" rel="stylesheet" type="text/css" />
+    
+    
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +880 1797 1864 70</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                @using(Html.BeginForm("Result","ItemList")){
+                                    <input type="text" name="topsearch" class="search-form" autocomplete="off" placeholder="Search by Title" />
+                                    <i class="fa fa-search"></i>
+                                }
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="~/Content/Images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="@ViewBag.Active1"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li class="@ViewBag.Active2"><a href="@Url.Action("Index", "About")">About Us</a></li>
+                        
+                        @if (Session["username"] != null)
+                        {
+                            <li class="@ViewBag.Active3"><a href="@Url.Action("Index", "PostAd")">Post Ad</a></li>
+                        }
+                        <li class="@ViewBag.Active4"><a href="@Url.Action("Index", "ItemList", new { id="" })">Items</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Mobiles" })">Mobiles</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Desktops" })">Desktops</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Cars" })">Cars</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Sports" })">Sports</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Laptops" })">Laptops</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Consoles" })">Consoles</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Electronics" })">Electronics</a></li>
+                                <li><a href="@Url.Action("Category", "ItemList", new { id = "Furnitures" })">Furnitures</a></li>
+                            </ul>
+                        </li> 
+                        <li class="@ViewBag.Active5"><a href="@Url.Action("Index","Contact")">Contact</a></li>
+                        @if (Convert.ToString(Session["status"]).Equals("Admin"))
+                        {
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@Url.Action("Index", "UserControl")">User Control</a></li>
+                                    <li><a href="@Url.Action("Index", "Feedback")">Site Feedbacks</a></li>
+                                </ul>
+                            </li>
+                            
+                        }
+                        @if (Session["username"] == null)
+                        {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("Index", "LogIn")">Sign In</a></li>
+                                <li><a href="@Url.Action("Index", "Registration")">Register</a></li>
+                            </ul>
+                        </li>
+                        }
+                        else
+                        {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Session["username"] <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("Index", "Profile", new { id = Session["username"] })">Profile</a></li>
+                                <li><a href="@Url.Action("EditProfile", "Profile")">Edit Profile</a></li>
+                                <li><a href="@Url.Action("Index", "ItemList", new { id = Session["username"].ToString() })">Posted Ads</a></li>
+                                <li><a href="@Url.Action("Index", "LogOut")">Log Out</a></li>
+                            </ul>
+                        </li>
+                        }
+                                                
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+
+
+    @RenderBody()
+    
+    @if (ViewBag.footer != null)
+    {
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy;Spring 2015 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ASP.NET Group Project</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Index", "About")">About Us</a></li>
+                        <li><a href="@Url.Action("Index","Contact")">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    }
+
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
+    <script src="~/Scripts/jquery.isotope.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+</body>
+</html>

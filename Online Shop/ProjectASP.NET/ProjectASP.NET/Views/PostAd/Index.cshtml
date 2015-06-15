@@ -1,0 +1,116 @@
+﻿@model ProjectASP.NET.Item
+
+@{
+    ViewBag.Title = "Post Ad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Active3 = "active";
+    ViewBag.footer = "active";
+}
+<section id="about-us">
+<div class="container">
+    @*<div class="center wow fadeInDown">*@
+        <div class="row">
+            <div class="col-md-5">
+            <div class="table-responsive">
+            <table class="table">
+            <tr>
+            <td>
+            <br />
+            <div class="well well-sm">
+                <strong>
+                    <span class="glyphicon glyphicon-asterisk">
+                    </span>Required Field<br /><br /><br />
+                    * Title Must Valid and Item Name Should be in the Title<br /><br />
+                    * You Have to Give a Description. You Have to Describe the Current Condition of Your Product<br /><br />
+                    * Do not Give a Unrealistic Price, Otherwise Your Post will be Removed<br /><br />
+                    * Mention Your City Name with Your Location
+                </strong>
+            </div>
+            </td>
+            </tr>
+            </table>
+            </div>
+            </div>
+            <div class="col-md-7">
+                <div class="table-responsive">
+                @using (Html.BeginForm())
+                {
+                    <table align="center" class="table">
+                        <tr>
+                            <td colspan="2" align="center">
+                            <div style="color:Green" align="center">
+                            @Html.ValidationSummary(false)
+                            </div>
+                            </td>
+                            <td>
+                            </td>
+                    
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Item Title: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.ItemTitle, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Item Description: </div>
+                            </td>
+                            <td>
+                                @Html.TextAreaFor(model => model.ItemDescription, new { @class = "form-control", rows = "10" })
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Category: </div>
+                            </td>
+                            <td>
+                                @Html.DropDownListFor(model => model.Category, 
+                                new List<SelectListItem>() { 
+                                    new SelectListItem { Text = "Mobiles", Value = "Mobiles" }, 
+                                    new SelectListItem { Text = "Desktops", Value = "Desktops" }, 
+                                    new SelectListItem { Text = "Cars", Value = "Cars" }, 
+                                    new SelectListItem { Text = "Sports", Value = "Sports" }, 
+                                    new SelectListItem { Text = "Laptops", Value = "Laptops" },
+                                    new SelectListItem { Text = "Consoles", Value = "Consoles" },
+                                    new SelectListItem { Text = "Electronics", Value = "Electronics" },
+                                    new SelectListItem { Text = "Furnitures", Value = "Furnitures" },
+                                }, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Price: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Price, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Location: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Location, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                            <input type="submit" class="btn btn-success form-control" value="Add Item" name="submit" />
+                            </td>
+                        </tr>
+                    </table>
+                }
+                </div>
+            </div>
+            
+        </div>
+        
+    @*</div>*@
+</div>
+</section>

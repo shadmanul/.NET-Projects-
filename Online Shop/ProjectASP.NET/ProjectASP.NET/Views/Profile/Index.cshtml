@@ -1,0 +1,114 @@
+﻿@model ProjectASP.NET.Contact
+
+@{
+    ViewBag.Title = "Profile";
+    ViewBag.footer = "active";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="about-us">
+<div class="container">
+    @*<div class="center wow fadeInDown">*@
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table align="center" class="table">
+                        <tr>
+                            <td rowspan="11" align="center">
+                            <img src="@Url.Action("GetImage", "Image", new { id = Model.Username })" class="img-thumbnail" alt="Responsive image" width="140" height="140" />
+                            </td>
+                            
+                    
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>First Name: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Firstname)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Middle Name: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Middlename)
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Last Name: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Lastname)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Gender: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Gender)
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Marital Status: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.MaritalStatus)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Phone: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Phone)
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Email: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Email)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Address: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Address)
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>City: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.City)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Country: </div>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Country)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        
+    @*</div>*@
+</div>
+</section>
+
+

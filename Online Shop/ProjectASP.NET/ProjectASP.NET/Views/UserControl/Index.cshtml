@@ -1,0 +1,100 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<ProjectASP.NET.Contact>
+
+
+@{
+    ViewBag.Title = "User Control";
+    ViewBag.Active6 = "active";
+    ViewBag.footer = "active";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    
+<div class="table-responsive">
+<table class="table">
+@using (Html.BeginForm("Index","UserControl",FormMethod.Get))
+{
+    <tr>
+        <th align="left" colspan="3">
+            <br />
+            <br />
+           <input type="text" id="txtSearch" name="search" class="form-control" placeholder="Search by Username/Email" />
+        </th>
+    </tr>
+    <tr>
+        <th align="right" colspan="3">
+           <input type="submit" name="submit" class="form-control btn-success" value="Search" placeholde="Search by Username" />
+            <br />
+            <br />
+        </th>
+    </tr>
+}
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Firstname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Lastname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Country)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Firstname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lastname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country)
+        </td>
+        <td>
+            <a href="@Url.Action("Index", "Profile", new { id = item.Username })">Details</a> |
+            <a href="@Url.Action("Delete", "UserControl", new { id = item.Username })">Delete</a> |
+            <a href="@Url.Action("Promote", "UserControl", new { id = item.Username })">Promote</a>
+        </td>
+    </tr>
+}
+
+</table>
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, search = Request.QueryString["search"] }),
+new PagedListRenderOptions()
+{
+    Display = PagedListDisplayMode.IfNeeded
+})
+</div>
+</div>

@@ -1,0 +1,122 @@
+﻿@model ProjectASP.NET.Contact
+
+@{
+    ViewBag.Title = "Edit Profile";
+    ViewBag.footer = "active";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="about-us">
+<div class="container">
+    @*<div class="center wow fadeInDown">*@
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="table-responsive">
+                @using (Html.BeginForm())
+                {
+                    <table align="center" class="table">
+                        <tr>
+                            <td colspan="2" align="center">
+                            <div style="color:Green" align="center">
+                            @Html.ValidationSummary(false)
+                            </div>
+                            @Html.HiddenFor(model => model.Username)
+                            @Html.HiddenFor(model => model.Gender)
+                            @Html.HiddenFor(model => model.ImageContentType)
+                            @Html.HiddenFor(model => model.ImageBytes)
+                            </td>
+                            <td>
+                            </td>
+                    
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>First Name: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Firstname, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Middle Name: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Middlename, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Last Name: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Lastname, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Marital Status: </div>
+                            </td>
+                            <td>
+                                @Html.DropDownListFor(model => model.MaritalStatus, new List<SelectListItem>() { new SelectListItem { Text = "Single", Value = "Single" }, new SelectListItem { Text = "Married", Value = "Married" }, new SelectListItem { Text = "Divorced", Value = "Divorced" }, new SelectListItem { Text = "Widowed", Value = "Widowed" } }, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Phone: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>Email: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Address: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>City: </div>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.City, new { @class = "form-control" })
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                <div>Country: </div>
+                            </td>
+                            <td>
+                                @Html.DropDownListFor(model => model.Country, new List<SelectListItem>() { new SelectListItem { Text = "Bangladesh", Value = "Bangladesh" }, new SelectListItem { Text = "Singapore", Value = "Singapore" }, new SelectListItem { Text = "Malaysia", Value = "Malaysia" }, new SelectListItem { Text = "Thailand", Value = "Thailand" } }, new { @class = "form-control" })
+            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                            <input type="submit" class="btn btn-success form-control" value="Update" name="submit" />
+                            </td>
+                        </tr>
+                    </table>
+                }
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        
+    @*</div>*@
+</div>
+</section>
+

@@ -1,0 +1,58 @@
+﻿@model ProjectASP.NET.LoginInfo
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Registration";
+    ViewBag.footer = "active";
+}
+<div class="container">
+
+<!-- Registration form - START -->
+    <div id="login-overlay" class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">      
+        <h4 class="modal-title" id="myModalLabel">Register</h4>
+        </div>
+    <div class="modal-body">
+    <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+
+    @using (Html.BeginForm())
+    {
+            
+        <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field<br />@Html.ValidationSummary(false)@Html.Raw(ViewBag.Msg)</strong></div>
+
+                
+                
+        <label for="InputName">Username</label>
+        <div class="input-group">
+        @Html.TextBoxFor(model => model.Username, new { @placeholder = "Enter Username", @class="form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+                
+        <label for="InputEmail">Password</label>
+        <div class="input-group">
+        @Html.PasswordFor(model => model.Password, new { @placeholder = "Your Desired Password", @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+                
+        <label for="InputEmail">Confirm Password</label>
+        <div class="input-group">
+        <input type="password" name="confirm" class="form-control" placeholder = "Retype Password" />
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        <br />
+        <input type="submit" name="commit" value="Next" class="btn btn-info form-control" />
+            
+    }
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectASP.NETModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ProjectASPNETModelStoreContainer">
+    <EntitySet Name="Comments" EntityType="ProjectASP.NETModel.Store.Comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ContactPaymentMethod" EntityType="ProjectASP.NETModel.Store.ContactPaymentMethod" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacts" EntityType="ProjectASP.NETModel.Store.Contacts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Feedbacks" EntityType="ProjectASP.NETModel.Store.Feedbacks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ItemImages" EntityType="ProjectASP.NETModel.Store.ItemImages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Items" EntityType="ProjectASP.NETModel.Store.Items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LoginInfos" EntityType="ProjectASP.NETModel.Store.LoginInfos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PaymentMethods" EntityType="ProjectASP.NETModel.Store.PaymentMethods" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="ProjectASP.NETModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Comments_Contacts" Association="ProjectASP.NETModel.Store.FK_Comments_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Items" Association="ProjectASP.NETModel.Store.FK_Comments_Items">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPaymentMethod_Contacts" Association="ProjectASP.NETModel.Store.FK_ContactPaymentMethod_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="ContactPaymentMethod" EntitySet="ContactPaymentMethod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPaymentMethod_PaymentMethods" Association="ProjectASP.NETModel.Store.FK_ContactPaymentMethod_PaymentMethods">
+      <End Role="PaymentMethods" EntitySet="PaymentMethods" />
+      <End Role="ContactPaymentMethod" EntitySet="ContactPaymentMethod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_LoginInfo" Association="ProjectASP.NETModel.Store.FK_Contacts_LoginInfo">
+      <End Role="LoginInfos" EntitySet="LoginInfos" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemImages_Items" Association="ProjectASP.NETModel.Store.FK_ItemImages_Items">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="ItemImages" EntitySet="ItemImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Contacts" Association="ProjectASP.NETModel.Store.FK_Items_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Items" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Contacts1" Association="ProjectASP.NETModel.Store.FK_Items_Contacts1">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Items" EntitySet="Items" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="CommentMessage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactPaymentMethod">
+    <Key>
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="PaymentMethod" />
+    </Key>
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PaymentMethod" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CardNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ExpiryDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MaritalStatus" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Firstname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Middlename" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lastname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageContentType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImageBytes" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Feedbacks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Subject" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ItemImages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ContentType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageBytes" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Items">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BuyerUsername" Type="nvarchar" MaxLength="50" />
+    <Property Name="SellerUsername" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Category" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="ItemTitle" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ItemDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Posted" Type="datetime" />
+    <Property Name="Location" Type="nvarchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="LoginInfos">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PaymentMethods">
+    <Key>
+      <PropertyRef Name="Method" />
+    </Key>
+    <Property Name="Method" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Comments_Contacts">
+    <End Role="Contacts" Type="ProjectASP.NETModel.Store.Contacts" Multiplicity="1" />
+    <End Role="Comments" Type="ProjectASP.NETModel.Store.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Items">
+    <End Role="Items" Type="ProjectASP.NETModel.Store.Items" Multiplicity="1" />
+    <End Role="Comments" Type="ProjectASP.NETModel.Store.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPaymentMethod_Contacts">
+    <End Role="Contacts" Type="ProjectASP.NETModel.Store.Contacts" Multiplicity="1" />
+    <End Role="ContactPaymentMethod" Type="ProjectASP.NETModel.Store.ContactPaymentMethod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="ContactPaymentMethod">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPaymentMethod_PaymentMethods">
+    <End Role="PaymentMethods" Type="ProjectASP.NETModel.Store.PaymentMethods" Multiplicity="1" />
+    <End Role="ContactPaymentMethod" Type="ProjectASP.NETModel.Store.ContactPaymentMethod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentMethods">
+        <PropertyRef Name="Method" />
+      </Principal>
+      <Dependent Role="ContactPaymentMethod">
+        <PropertyRef Name="PaymentMethod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_LoginInfo">
+    <End Role="LoginInfos" Type="ProjectASP.NETModel.Store.LoginInfos" Multiplicity="1" />
+    <End Role="Contacts" Type="ProjectASP.NETModel.Store.Contacts" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="LoginInfos">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemImages_Items">
+    <End Role="Items" Type="ProjectASP.NETModel.Store.Items" Multiplicity="1" />
+    <End Role="ItemImages" Type="ProjectASP.NETModel.Store.ItemImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="ItemImages">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Contacts">
+    <End Role="Contacts" Type="ProjectASP.NETModel.Store.Contacts" Multiplicity="0..1" />
+    <End Role="Items" Type="ProjectASP.NETModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Items">
+        <PropertyRef Name="BuyerUsername" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Contacts1">
+    <End Role="Contacts" Type="ProjectASP.NETModel.Store.Contacts" Multiplicity="1" />
+    <End Role="Items" Type="ProjectASP.NETModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Items">
+        <PropertyRef Name="SellerUsername" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

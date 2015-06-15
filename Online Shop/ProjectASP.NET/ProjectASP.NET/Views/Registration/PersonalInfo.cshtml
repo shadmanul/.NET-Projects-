@@ -1,0 +1,131 @@
+﻿@model ProjectASP.NET.Contact
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "PersonalInfo";
+    ViewBag.footer = "active";
+}
+<div class="container">
+
+<!-- Registration form - START -->
+    <div id="login-overlay" class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">      
+        <h4 class="modal-title" id="myModalLabel">Register</h4>
+        </div>
+    <div class="modal-body">
+    <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+
+    @using (Html.BeginForm("PersonalInfo", "Registration", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+            
+        <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field<br />@Html.ValidationSummary(false)@Html.Raw(ViewBag.Msg)</strong></div>
+
+        <div class="form-editor">
+            <input type="file" name="FileUpload" class="form-control btn-info" accept="image/*" />
+        <br/>
+            <span style="font-weight:bold">[ Less Than 1mb File Size ]</span>
+        </div>
+        <br />        
+                
+        <label for="InputName">First Name</label>
+        <div class="input-group">
+        @Html.TextBoxFor(model => model.Firstname, new { @placeholder = "Enter First Name", @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+                
+        <label for="InputEmail">Middle Name</label>
+        
+        @Html.TextBoxFor(model => model.Middlename, new { @placeholder = "Enter Middle Name", @class = "form-control" })
+        
+        
+        <br />
+                
+        <label for="InputEmail">Last Name</label>
+        <div class="input-group">
+        @Html.TextBoxFor(model => model.Lastname, new { @placeholder = "Enter Last Name", @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        
+        
+        
+        <label for="InputEmail">Gender</label>
+        <div class="input-group">
+        @Html.DropDownListFor(model => model.Gender,
+        new List<SelectListItem>() { 
+            new SelectListItem { Text = "Male", Value = "Male" }, 
+            new SelectListItem { Text = "Female", Value = "Female" } 
+        }, new { @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        
+        <label for="InputEmail">Marital Status</label>
+        <div class="input-group">
+        @Html.DropDownListFor(model => model.MaritalStatus,
+        new List<SelectListItem>() { 
+            new SelectListItem { Text = "Single", Value = "Single" },
+            new SelectListItem { Text = "Married", Value = "Married" },
+            new SelectListItem { Text = "Divorced", Value = "Divorced" },
+            new SelectListItem { Text = "Widowed", Value = "Widowed" }
+        }, new { @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        
+        <label for="InputEmail">Phone</label>
+        
+        @Html.TextBoxFor(model => model.Phone, new { @placeholder = "Enter Phone Number", @class = "form-control" })
+        
+        <br />
+        
+        <label for="InputEmail">Email</label>
+        <div class="input-group">
+        @Html.TextBoxFor(model => model.Email, new { @placeholder = "Enter Email", @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        
+        <label for="InputEmail">Address</label>
+        <div class="input-group">
+        @Html.TextAreaFor(model => model.Address, new { @placeholder = "Enter Address", @class = "form-control", @row = "3" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        
+        <label for="InputEmail">City</label>
+        <div class="input-group">
+        @Html.TextBoxFor(model => model.City, new { @placeholder = "Enter City", @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        
+        <label for="InputEmail">Country</label>
+        <div class="input-group">
+        @Html.DropDownListFor(model => model.Country, 
+        new List<SelectListItem>() { 
+            new SelectListItem { Text = "Bangladesh", Value = "Bangladesh" }, 
+            new SelectListItem { Text = "Singapore", Value = "Singapore" }, 
+            new SelectListItem { Text = "Malaysia", Value = "Malaysia" }, 
+            new SelectListItem { Text = "Thailand", Value = "Thailand" }
+        }, new { @class = "form-control" })
+        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+        </div>
+        <br />
+        <br />
+        <input type="submit" name="commit" value="Register" class="btn btn-info form-control" />
+            
+    }
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+

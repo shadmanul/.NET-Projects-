@@ -1,0 +1,60 @@
+﻿@model ProjectASP.NET.Models.FileUploadViewModel
+
+@{
+    ViewBag.Title = "Image Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.footer = "active";
+}
+<section id="about-us">
+<div class="container">
+    @*<div class="center wow fadeInDown">*@
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+            <div class="center wow fadeInDown">
+                <h2>Advertise Posted</h2>
+                <p class="lead">Your advertise is successfully posted. You can skip this page or upload multiple image. Remember to upload images which are less than 1mb of size.</p>
+            </div>
+            
+            
+                <div class="table-responsive">
+                @using (Html.BeginForm("ImageUpload", "PostAd", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <table align="center" class="table">
+                        <tr>
+                            <td colspan="2" align="center">
+                            <div style="color:Green" align="center">
+                            @Html.Raw(ViewBag.Msg)
+                            </div>
+                            </td>
+                            <td>
+                            </td>
+                    
+                        </tr>
+                        <tr class="success">
+                            <td colspan="2">
+                                @Html.TextBoxFor(c => c.file, new { type = "file", multiple = "true", accept = "image/*", @class = "form-control btn-info" })
+                                <div style="color:Green">File Size Should be Less Than 1mb</div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                            <input type="submit" class="btn btn-success form-control" value="Skip" name="submit" />
+                            </td>
+                            <td align="center">
+                            <input type="submit" class="btn btn-success form-control" value="Upload Images" name="submit" />
+                            </td>
+                        </tr>
+                    </table>
+                }
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        
+    @*</div>*@
+</div>
+</section>
+
+

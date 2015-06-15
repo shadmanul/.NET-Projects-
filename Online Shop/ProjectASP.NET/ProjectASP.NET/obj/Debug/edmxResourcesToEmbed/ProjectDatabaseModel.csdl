@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectASP.NETModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ProjectDatabaseContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Comments" EntityType="ProjectASP.NETModel.Comment" />
+    <EntitySet Name="ContactPaymentMethods" EntityType="ProjectASP.NETModel.ContactPaymentMethod" />
+    <EntitySet Name="Contacts" EntityType="ProjectASP.NETModel.Contact" />
+    <EntitySet Name="Feedbacks" EntityType="ProjectASP.NETModel.Feedback" />
+    <EntitySet Name="ItemImages" EntityType="ProjectASP.NETModel.ItemImage" />
+    <EntitySet Name="Items" EntityType="ProjectASP.NETModel.Item" />
+    <EntitySet Name="LoginInfos" EntityType="ProjectASP.NETModel.LoginInfo" />
+    <EntitySet Name="PaymentMethods" EntityType="ProjectASP.NETModel.PaymentMethod" />
+    <EntitySet Name="sysdiagrams" EntityType="ProjectASP.NETModel.sysdiagram" />
+    <AssociationSet Name="FK_Comments_Contacts" Association="ProjectASP.NETModel.FK_Comments_Contacts">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Items" Association="ProjectASP.NETModel.FK_Comments_Items">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPaymentMethod_Contacts" Association="ProjectASP.NETModel.FK_ContactPaymentMethod_Contacts">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="ContactPaymentMethod" EntitySet="ContactPaymentMethods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactPaymentMethod_PaymentMethods" Association="ProjectASP.NETModel.FK_ContactPaymentMethod_PaymentMethods">
+      <End Role="PaymentMethod" EntitySet="PaymentMethods" />
+      <End Role="ContactPaymentMethod" EntitySet="ContactPaymentMethods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_LoginInfo" Association="ProjectASP.NETModel.FK_Contacts_LoginInfo">
+      <End Role="LoginInfo" EntitySet="LoginInfos" />
+      <End Role="Contact" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Contacts" Association="ProjectASP.NETModel.FK_Items_Contacts">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Contacts1" Association="ProjectASP.NETModel.FK_Items_Contacts1">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemImages_Items" Association="ProjectASP.NETModel.FK_ItemImages_Items">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="ItemImage" EntitySet="ItemImages" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Type="Int32" Name="CommentID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="String" Name="CommentMessage" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Time" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="ProjectASP.NETModel.FK_Comments_Contacts" FromRole="Comment" ToRole="Contact" />
+    <NavigationProperty Name="Item" Relationship="ProjectASP.NETModel.FK_Comments_Items" FromRole="Comment" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="ContactPaymentMethod">
+    <Key>
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="PaymentMethod" />
+    </Key>
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentMethod" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CardNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ExpiryDate" Nullable="false" />
+    <NavigationProperty Name="Contact" Relationship="ProjectASP.NETModel.FK_ContactPaymentMethod_Contacts" FromRole="ContactPaymentMethod" ToRole="Contact" />
+    <NavigationProperty Name="PaymentMethod1" Relationship="ProjectASP.NETModel.FK_ContactPaymentMethod_PaymentMethods" FromRole="ContactPaymentMethod" ToRole="PaymentMethod" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MaritalStatus" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Firstname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Middlename" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Lastname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ImageContentType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="ImageBytes" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Comments" Relationship="ProjectASP.NETModel.FK_Comments_Contacts" FromRole="Contact" ToRole="Comment" />
+    <NavigationProperty Name="ContactPaymentMethods" Relationship="ProjectASP.NETModel.FK_ContactPaymentMethod_Contacts" FromRole="Contact" ToRole="ContactPaymentMethod" />
+    <NavigationProperty Name="LoginInfo" Relationship="ProjectASP.NETModel.FK_Contacts_LoginInfo" FromRole="Contact" ToRole="LoginInfo" />
+    <NavigationProperty Name="Items" Relationship="ProjectASP.NETModel.FK_Items_Contacts" FromRole="Contact" ToRole="Item" />
+    <NavigationProperty Name="Items1" Relationship="ProjectASP.NETModel.FK_Items_Contacts1" FromRole="Contact" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Feedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Subject" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Time" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ItemImage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ContentType" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="ImageBytes" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="ProjectASP.NETModel.FK_ItemImages_Items" FromRole="ItemImage" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Type="Int32" Name="ItemID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="BuyerUsername" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SellerUsername" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Category" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Price" Nullable="false" />
+    <Property Type="String" Name="ItemTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ItemDescription" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Posted" />
+    <Property Type="String" Name="Location" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Comments" Relationship="ProjectASP.NETModel.FK_Comments_Items" FromRole="Item" ToRole="Comment" />
+    <NavigationProperty Name="Contact" Relationship="ProjectASP.NETModel.FK_Items_Contacts" FromRole="Item" ToRole="Contact" />
+    <NavigationProperty Name="Contact1" Relationship="ProjectASP.NETModel.FK_Items_Contacts1" FromRole="Item" ToRole="Contact" />
+    <NavigationProperty Name="ItemImages" Relationship="ProjectASP.NETModel.FK_ItemImages_Items" FromRole="Item" ToRole="ItemImage" />
+  </EntityType>
+  <EntityType Name="LoginInfo">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Contact" Relationship="ProjectASP.NETModel.FK_Contacts_LoginInfo" FromRole="LoginInfo" ToRole="Contact" />
+  </EntityType>
+  <EntityType Name="PaymentMethod">
+    <Key>
+      <PropertyRef Name="Method" />
+    </Key>
+    <Property Type="String" Name="Method" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ContactPaymentMethods" Relationship="ProjectASP.NETModel.FK_ContactPaymentMethod_PaymentMethods" FromRole="PaymentMethod" ToRole="ContactPaymentMethod" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Comments_Contacts">
+    <End Type="ProjectASP.NETModel.Contact" Role="Contact" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Items">
+    <End Type="ProjectASP.NETModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPaymentMethod_Contacts">
+    <End Type="ProjectASP.NETModel.Contact" Role="Contact" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.ContactPaymentMethod" Role="ContactPaymentMethod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="ContactPaymentMethod">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactPaymentMethod_PaymentMethods">
+    <End Type="ProjectASP.NETModel.PaymentMethod" Role="PaymentMethod" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.ContactPaymentMethod" Role="ContactPaymentMethod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentMethod">
+        <PropertyRef Name="Method" />
+      </Principal>
+      <Dependent Role="ContactPaymentMethod">
+        <PropertyRef Name="PaymentMethod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_LoginInfo">
+    <End Type="ProjectASP.NETModel.LoginInfo" Role="LoginInfo" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.Contact" Role="Contact" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="LoginInfo">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Contact">
+        <PropertyRef Name="Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Contacts">
+    <End Type="ProjectASP.NETModel.Contact" Role="Contact" Multiplicity="0..1" />
+    <End Type="ProjectASP.NETModel.Item" Role="Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="BuyerUsername" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Contacts1">
+    <End Type="ProjectASP.NETModel.Contact" Role="Contact" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.Item" Role="Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="SellerUsername" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemImages_Items">
+    <End Type="ProjectASP.NETModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="ProjectASP.NETModel.ItemImage" Role="ItemImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="ItemImage">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

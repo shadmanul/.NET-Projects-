@@ -1,0 +1,62 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<ProjectASP.NET.Feedback>
+
+@{
+    ViewBag.Title = "FeedBacks";
+    //ViewBag.footer = "active";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+<div class="table-responsive">
+<br/>
+<br/>
+<br/>
+<br/>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Message)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Time)
+        </th>
+        <th>
+            Sender
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+
+        </td>
+        <td>
+            @Html.Raw(item.Message.Replace(Environment.NewLine, "<br/>"))
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, search = Request.QueryString["search"] }),
+new PagedListRenderOptions()
+{
+    Display = PagedListDisplayMode.IfNeeded
+})
+</div>
+</div>
